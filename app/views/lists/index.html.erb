@@ -1,0 +1,9 @@
+<div class="container mt-3">
+  <% @lists.each do |list| %>
+    <div class="cards">
+      <div class="card-category">
+        <h2 class="text-center"><%= list.name %></h2>
+      </div>
+    </div>
+  <% end %>
+</div>

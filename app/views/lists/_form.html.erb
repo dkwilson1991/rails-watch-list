@@ -1,0 +1,6 @@
+<%= simple_form_for @movie.title do |f| %>
+  <%= f.input :name %>
+  <%= f.association :company %>
+  <%= f.association :roles %>
+  <%= f.button :submit %>
+<% end %>

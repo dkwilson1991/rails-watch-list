@@ -1,5 +1,4 @@
 require 'open-uri'
-require 'faker'
 Movie.destroy_all
 # List.destroy_all
 

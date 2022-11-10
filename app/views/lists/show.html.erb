@@ -1,0 +1,13 @@
+<div class="container mt-3">
+  <div class="cards">
+    <div class="card-category">
+      <h2 class="text-center"><%= @list.name %></h2>
+    </div>
+    <%= link_to list_path(@list), data: { turbo_method: 'delete', turbo_confirm: "delete #{@list.name}?" }, class: 'card-remove-link' do %>
+      <i class="fa-solid fa-xmark"></i>
+    <% end %>
+    <%= link_to list_path(@list) do %>
+      <i class="fa-solid fa-arrow-rotate-left"></i>
+    <% end %>
+  </div>
+</div>
